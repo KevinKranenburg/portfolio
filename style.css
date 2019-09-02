@@ -1,0 +1,387 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: Arial;
+  margin: auto;
+  font-family: "Nunito", sans-serif;
+  position: relative;
+  height: 3100px;
+  
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+h2 {
+    text-align: center;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+#project-img {
+  border-radius: 10px;
+}
+
+.button {
+  background-color: #f1f1f1; /* Green */
+  border: none;
+  color: #000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  display: block;
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+  box-shadow: 1px 1px 10px 0px rgba(176, 176, 176, 1);
+  color: #000;
+  transition-duration: 0.4s;
+}
+
+#profiel-img {
+  width: 250px;
+  border-left: 2px solid #000;
+}
+
+#about-text {
+  float: right;
+  margin-right: 30px;
+}
+
+.fa {
+  padding: 30px;
+  font-size: 30px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 12px;
+}
+
+.fa-twitter {
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+}
+
+.fa-twitter:hover {
+  background: #55acee;
+  color: #fff;
+  border-radius: 0%;
+  transition-duration: 0.5s;
+}
+
+.fa-linkedin {
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+}
+
+.fa-linkedin:hover {
+  background: #007bb5;
+  color: #fff;
+  border-radius: 0%;
+  transition-duration: 0.5s;
+}
+
+.fa-instagram {
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+}
+
+.fa-instagram:hover {
+  background: #b700b7;
+  color: #fff;
+  border-radius: 0%;
+  transition-duration: 0.5s;
+}
+
+.fa-reddit {
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+}
+
+.fa-reddit:hover {
+  background: #ff5700;
+  color: #fff;
+  border-radius: 0%;
+  transition-duration: 0.5s;
+}
+
+.fa-snapchat-ghost {
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-snapchat-ghost:hover {
+  background: #fffc00;
+  color: #fff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border-radius: 0%;
+  transition-duration: 0.5s;
+}
+
+#social-icons {
+  text-align: center;
+}
+
+#contact {
+    text-align: center;
+}
+
+img.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+      
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+      
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+    img.bg {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+  }
+
+
+  .line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+.line-2{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 3s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: transparent;}
+  to{border-right-color: transparent;}
+}
+
+#submit-button {
+    background-color: #fff; /* Green */
+    border: none;
+    color: #000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+#reset-button {
+    background-color: #fff; /* Green */
+    border: none;
+    color: #000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+#reset-button:hover {
+    background-color: #fff;
+    box-shadow: 1px 1px 10px 0px rgba(176, 176, 176, 1);
+    color: #000;
+    transition-duration: 0.4s;
+  }
+
+  #submit-button:hover {
+    background-color: #fff;
+    box-shadow: 1px 1px 10px 0px rgba(176, 176, 176, 1);
+    color: #000;
+    transition-duration: 0.4s;
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .not-centered {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    z-index: 100;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 25px;
+    height: 25px;
+    border-bottom: 4px solid #fff;
+    border-right: 4px solid #fff;
+    z-index: 9;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%) rotate(45deg);
+    -moz-transform: translate(-50%, 0%) rotate(45deg);
+    transform: translate(-50%, 0%) rotate(45deg);
+    -webkit-animation: fade_move_down 1.5s ease-in-out infinite;
+    -moz-animation:    fade_move_down 1.5s ease-in-out infinite;
+    animation:         fade_move_down 1.5s ease-in-out infinite;
+  }
+
+  @-webkit-keyframes fade_move_down {
+    0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+  @-moz-keyframes fade_move_down {
+    0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+  @keyframes fade_move_down {
+    0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+  
+  .scroll-button {
+    background-color: transparent; /* Green */
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    display: block;
+    border: 1px solid #fff;
+  }
+
+  .scroll-button:hover {
+    background-color: #fff; 
+    border: none;
+    color: #000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    display: block;
+    border: 1px solid #fff;
+    transition-duration: 0.6s;
+  }
